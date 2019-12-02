@@ -36,7 +36,7 @@ string Address::checkCountry() {
 	
 }
 string Address::checkState() {
-	static string states[] = { "AK - Alaska",
+	/*static string states[] = { "AK - Alaska",
 		"AL - Alabama",
 		"AR - Arkansas",
 		"AS - American Samoa",
@@ -90,12 +90,30 @@ string Address::checkState() {
 		"WA - Washington",
 		"WI - Wisconsin",
 		"WV - West Virginia",
-		"WY - Wyoming" };
+		"WY - Wyoming" };*/
 	cout << "please enter a state?" << endl;
 	string state;
 	cin >> state;
+	return state;
+	
 
 
 
 }
+string Address::checkStAddress() {
+	string st;
+	cout << "please enter a street address?" << endl;
+	cin >> st;
+	return st;
+}
+string Address::checkZip() {
+	string zip;
+	cout << "please enter zipcode?" << endl;
+	cin >> zip;
+	return zip;
+}
+void Address::toString() {
+	cout << "Home address:" << endl
+		<< st_address << endl << state << " " << zip_code << endl << country;
 
+}

@@ -19,5 +19,6 @@ public:
 	string checkStAddress();
 	string checkZip();
 	string checkCountry();
+	void toString();
 	 
 };
